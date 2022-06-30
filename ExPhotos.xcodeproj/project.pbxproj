@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9227BDA70113060898033B55 /* Pods_ExPhotos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25106EB06DDAC698EDEFDA5 /* Pods_ExPhotos.framework */; };
 		C6AC6076286D47B600C7BAD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AC6075286D47B500C7BAD7 /* AppDelegate.swift */; };
 		C6AC6078286D47B600C7BAD7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AC6077286D47B600C7BAD7 /* SceneDelegate.swift */; };
 		C6AC607A286D47B600C7BAD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AC6079286D47B600C7BAD7 /* ViewController.swift */; };
 		C6AC607D286D47B600C7BAD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6AC607B286D47B600C7BAD7 /* Main.storyboard */; };
 		C6AC607F286D47B700C7BAD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6AC607E286D47B700C7BAD7 /* Assets.xcassets */; };
 		C6AC6082286D47B700C7BAD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6AC6080286D47B700C7BAD7 /* LaunchScreen.storyboard */; };
+		C6AC608A286D47C300C7BAD7 /* PhotoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AC6089286D47C300C7BAD7 /* PhotoService.swift */; };
+		C6AC608C286D6FB600C7BAD7 /* AlbumList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AC608B286D6FB600C7BAD7 /* AlbumList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B8634360F7CFD52801C3ACD /* Pods-ExPhotos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExPhotos.release.xcconfig"; path = "Target Support Files/Pods-ExPhotos/Pods-ExPhotos.release.xcconfig"; sourceTree = "<group>"; };
+		A4A437E6EF3F632D3421996E /* Pods-ExPhotos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExPhotos.debug.xcconfig"; path = "Target Support Files/Pods-ExPhotos/Pods-ExPhotos.debug.xcconfig"; sourceTree = "<group>"; };
+		C25106EB06DDAC698EDEFDA5 /* Pods_ExPhotos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExPhotos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6AC6072286D47B500C7BAD7 /* ExPhotos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExPhotos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6AC6075286D47B500C7BAD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6AC6077286D47B600C7BAD7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,8 @@
 		C6AC607E286D47B700C7BAD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6AC6081286D47B700C7BAD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C6AC6083286D47B700C7BAD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6AC6089286D47C300C7BAD7 /* PhotoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoService.swift; sourceTree = "<group>"; };
+		C6AC608B286D6FB600C7BAD7 /* AlbumList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9227BDA70113060898033B55 /* Pods_ExPhotos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		94A350F5E9F31F38A29B3DBF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A4A437E6EF3F632D3421996E /* Pods-ExPhotos.debug.xcconfig */,
+				0B8634360F7CFD52801C3ACD /* Pods-ExPhotos.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		ACA2D6969DF9375417A1EA9B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C25106EB06DDAC698EDEFDA5 /* Pods_ExPhotos.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C6AC6069286D47B500C7BAD7 = {
 			isa = PBXGroup;
 			children = (
 				C6AC6074286D47B500C7BAD7 /* ExPhotos */,
 				C6AC6073286D47B500C7BAD7 /* Products */,
+				94A350F5E9F31F38A29B3DBF /* Pods */,
+				ACA2D6969DF9375417A1EA9B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,6 +87,8 @@
 				C6AC6075286D47B500C7BAD7 /* AppDelegate.swift */,
 				C6AC6077286D47B600C7BAD7 /* SceneDelegate.swift */,
 				C6AC6079286D47B600C7BAD7 /* ViewController.swift */,
+				C6AC6089286D47C300C7BAD7 /* PhotoService.swift */,
+				C6AC608B286D6FB600C7BAD7 /* AlbumList.swift */,
 				C6AC607B286D47B600C7BAD7 /* Main.storyboard */,
 				C6AC607E286D47B700C7BAD7 /* Assets.xcassets */,
 				C6AC6080286D47B700C7BAD7 /* LaunchScreen.storyboard */,
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C6AC6086286D47B700C7BAD7 /* Build configuration list for PBXNativeTarget "ExPhotos" */;
 			buildPhases = (
+				7C32DA9FAD773DDA291674B7 /* [CP] Check Pods Manifest.lock */,
 				C6AC606E286D47B500C7BAD7 /* Sources */,
 				C6AC606F286D47B500C7BAD7 /* Frameworks */,
 				C6AC6070286D47B500C7BAD7 /* Resources */,
+				FF4A3D25DEB5376946E05D61 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,12 +165,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7C32DA9FAD773DDA291674B7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExPhotos-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF4A3D25DEB5376946E05D61 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExPhotos/Pods-ExPhotos-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExPhotos/Pods-ExPhotos-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ExPhotos/Pods-ExPhotos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C6AC606E286D47B500C7BAD7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6AC608A286D47C300C7BAD7 /* PhotoService.swift in Sources */,
 				C6AC607A286D47B600C7BAD7 /* ViewController.swift in Sources */,
+				C6AC608C286D6FB600C7BAD7 /* AlbumList.swift in Sources */,
 				C6AC6076286D47B600C7BAD7 /* AppDelegate.swift in Sources */,
 				C6AC6078286D47B600C7BAD7 /* SceneDelegate.swift in Sources */,
 			);
@@ -282,6 +358,7 @@
 		};
 		C6AC6087286D47B700C7BAD7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4A437E6EF3F632D3421996E /* Pods-ExPhotos.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +387,7 @@
 		};
 		C6AC6088286D47B700C7BAD7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B8634360F7CFD52801C3ACD /* Pods-ExPhotos.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

@@ -1,0 +1,6 @@
+framework module Pods_ExPhotos {
+  umbrella header "Pods-ExPhotos-umbrella.h"
+
+  export *
+  module * { export * }
+}
